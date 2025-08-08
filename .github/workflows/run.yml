@@ -5,11 +5,7 @@ on:
 jobs:
   update-runner-labels:
     name: Update runner labels
-    strategy:
-      matrix:
-        labels:
-          - self-hosted
-    runs-on: [ self-hosted ]
+    runs-on: [self-hosted]
     steps:
       - name: Print machine name
         run: |
